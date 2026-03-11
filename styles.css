@@ -1,9 +1,8 @@
-body {
+body, head {
     background-color:coral;
     color:dodgerblue;
-    font-family:sans-serif;
-    margin: 0;
-    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0; 
 }
 h1 {
     color: maroon;
