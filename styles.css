@@ -4,11 +4,32 @@ body, head {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0; 
 }
-h1 {
-    color: maroon;
-    margin-left: 40px;
-    width: 800px;
-    border: 50px red;
-    padding: 25px;
-    margin: 0 auto;
+
+    
+.title {
+    
+  border: 2px solid red;   
+  margin:auto;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+.images {
+    margin-right: 200px;
+
+
+}
+
+.textbox1 {
+    width: 250px;
+    padding-right: 100%;
+     width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin-left: 0px
+
 }
