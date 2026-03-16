@@ -1,5 +1,12 @@
+/* Change link color on hover */
+a:hover {
+  color: #ff6600; /* bright orange, change as desired */
+}
+body {
+  text-align: center;
+}
 body, head {
-    background-color:coral;
+    background-color:rgba(163, 82, 255, 0.438);
     color:dodgerblue;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0; 
@@ -19,17 +26,47 @@ body, head {
 }
 
 .images {
-    margin-right: 200px;
-
-
+    max-width: 100%;
+    height:auto;
 }
 
-.textbox1 {
+.paragraphs {
     width: 250px;
     padding-right: 100%;
-     width: 300px;
-  border: 15px solid green;
+     width: 700px;
   padding: 50px;
-  margin-left: 0px
-
+  margin-left: 0px;
+  word-wrap: break-word;    
+  text-align:center;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+   overflow-wrap: break-word;
+  /* Ensure a width is defined for it to work as expected */
+  width: 800px; 
+    
 }
+.box {
+    margin-left: 400px;
+    display: block;
+    gap :10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.container {
+    display: flex;
+  flex-direction: column;
+}
+
+h3, p {
+    text-align: center;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
