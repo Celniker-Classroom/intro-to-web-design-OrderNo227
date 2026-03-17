@@ -43,7 +43,6 @@ body, head {
   margin-right: auto;
   max-width: 100%;
    overflow-wrap: break-word;
-  /* Ensure a width is defined for it to work as expected */
   width: 800px; 
     
 }
@@ -70,3 +69,33 @@ h3, p {
     margin-right: auto;
 }
     
+@media (max-width: 1200px) {
+  #container {
+    max-width: 80%;
+    width: 95%;
+  }
+  .paragraphs {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  #container {
+    max-width: 90%;
+    width: 95%;
+  }
+  .paragraphs {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #container {
+    max-width: 100%;
+    width: 95%;
+  }
+  .paragraphs {
+    font-size: 13px;
+  }
+
+}
