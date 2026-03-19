@@ -45,9 +45,10 @@ a:visited {
   border: 15px solid green;
   padding: 50px;
   margin: 0 auto;
-  word-wrap: break-word;    
+  word-wrap: break-word;   
   text-align:center;
   line-height: 1.5em;
+  float: none;
     
 }
 .box {
