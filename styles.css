@@ -1,14 +1,13 @@
-/* Change link color on hover */
-a:hover {
-  color: #ff6600;
-  cursor: pointer;
-  
+.images:hover {
+    transform: scale(1.67);
+    transition: transform 6.7s ease;
 }
+
 body {
   text-align: center;
 }
 body, head {
-    background-color:#a352ff70;
+    background-color:rgba(163, 82, 255, 0.438);
     color:dodgerblue;
     font-family:sans-serif;
     margin: 0; 
@@ -23,30 +22,32 @@ body, head {
   display: flex;
   justify-content: center;
   align-items: center;
- 
-  
+}
+
+a {
+    color: red;
+}
+
+a:visited {
+    color:rgb(255, 136, 0)
 }
 
 .images {
     max-width: 100%;
     height:auto;
-    float: none;
+    
 }
 
 .paragraphs {
     width: 250px;
     padding-right: 100%;
-     width: 700px;
+     width: 325px;
+  border: 15px solid green;
   padding: 50px;
-  margin-left: 0px;
+  margin: 0 auto;
   word-wrap: break-word;    
   text-align:center;
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-   overflow-wrap: break-word;
-  width: 800px; 
+  line-height: 1.5em;
     
 }
 .box {
@@ -58,13 +59,14 @@ body, head {
 }
 
 .container {
-    display: flex;
-  flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 h3, p {
     text-align: center;
-    line-height: 1.5;
 }
 
 .img {
@@ -72,51 +74,58 @@ h3, p {
     margin-left: auto;
     margin-right: auto;
 }
-    
-@media (max-width: 1200px) {
-  #container {
-    max-width: 80%;
-    width: 95%;
-  }
-  .paragraphs {
-    font-size: 22px;
-  }
-}
 
-@media (max-width: 992px) {
-  #container {
-    max-width: 90%;
-    width: 95%;
-  }
-  .paragraphs {
-    font-size: 18px;
-  }
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: rgba(163, 82, 255, 0.438);
+    padding: 10px;
+    color: dodgerblue;
+    font-family: sans-serif;
+    text-align: center;
+}
+    
+@media (max-width: 1024px) {
+    body {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 768px) {
-  #container {
-    max-width: 100%;
-    width: 95%;
-  }
-  .paragraphs {
-    font-size: 13px;
-  }
+    body {
+        font-size: 18px;
+    }
 }
 
-#sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 200px;
-  height: 100%;
-  background-color: #f0f0f0;
-  padding: 20px;
-  font-family: sans-serif;
-  background-color: #c290fa70;
-  outline: 3px solid darkblue;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  text-align: left;
-  color: orangered;
-  letter-spacing: -0.2em;
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+}
+
+a:hover {
+    color: rgb(0, 255, 128);
 }
